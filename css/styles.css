@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    font-family: 'Lexend', sans-serif;
     background-color: hsl(233, 47%, 7%);
 }
 
@@ -44,8 +45,9 @@ body {
  }
  
  .card-title {
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 20px;
  }
@@ -72,6 +74,8 @@ body {
 }
 
 .card-position {
+    position: relative;
+    top: 90px;
     color: hsla(0, 0%, 100%, 0.6);
 
 }
@@ -91,4 +95,46 @@ body {
     padding: 10px 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1450px) {
+    body {
+        /* height: 100vh;
+        justify-content: center; */
+    }
+
+    .main-cardboard {
+        flex-direction: row-reverse;
+        max-width: 1200px;
+    }
+    .card-image-colored:before {
+        border-radius: 0 10px 0 10px;
+    }
+
+    .card-image {
+        height: auto;
+        max-width: none;
+        width: 600px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .description-card {
+        text-align: center;
+        margin-right: 10%;
+        margin-bottom: 1rem;
+    }
+
+    .cards {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .card-position {
+        flex-grow: 1;
+        padding: 0.9rem 0 0 0;
+    }
 }
